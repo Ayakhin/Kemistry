@@ -5,6 +5,7 @@ import { Navbar } from './views/components/Navbar/Navbar'
 // import ProductDetail from './views/pages/ProductDetail/ProductDetail'
 import NotFound from './views/pages/NotFound/NotFound'
 import Product from './views/pages/Product/Product'
+import History from './views/pages/History/History.tsx'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
           {/* Route pour le panier */}
           <Route path="/panier" element={<Cart />} />
+          <Route path="/historique" element={<History />} />
 
           {/* Route dynamique pour la fiche produit (avec un paramètre :id) */}
           {/* <Route path="/produit/:id" element={<ProductDetail />} /> */}
